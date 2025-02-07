@@ -2,7 +2,7 @@
 <html lang="{% block html_lang %}{{ DEFAULT_LANG }}{% endblock html_lang %}">
 	<head>
 		    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-		    <link rel="stylesheet" href="{{ url_for('static/css', filename='tailwind.purged.min.css') }}"/>
+		    <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/tailwind.purged.min.css }}"/>
 	</head>
 
 	<body>
