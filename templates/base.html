@@ -12,10 +12,12 @@
 	<body>
 		<div class="flex flex-col min-h-screen">
 			{% include '_includes/navbar.html' %}
-			<main class="bg-sky-950 text-white p-4 flex-grow justify-center w-full">
-				{% block content  %}
+			<main class="flex-grow justify-between mx-auto w-full">
+				<div class="p-4 bg-sky-950 text-white flex-1">
+					{% block content  %}
 
-				{% endblock %}
+					{% endblock %}
+				</div>
 			</main>
 			{% include '_includes/footer.html' %}
 		</div>
