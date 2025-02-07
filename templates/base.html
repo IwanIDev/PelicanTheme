@@ -10,12 +10,15 @@
 	</head>
 
 	<body>
-		{% include '_includes/navbar.html' %}
-		<main class="dark:bg-sky-950 dark:text-white p-4">
-			{% block content  %}
+		<div class="flex flex-col h-screen">
+			{% include '_includes/navbar.html' %}
+			<main class="dark:bg-sky-950 dark:text-white p-4 flex-grow">
+				{% block content  %}
 
-			{% endblock %}
-		</main>
+				{% endblock %}
+			</main>
+			{% include '_includes/footer.html' %}
+		</div>
 	</body>
 
 </html>
