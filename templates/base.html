@@ -2,7 +2,7 @@
 <html lang="{% block html_lang %}{{ DEFAULT_LANG }}{% endblock html_lang %}" class="dark">
 	<head>
 		    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-		    <!-- <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/tailwind.purged.min.css"/> -->
+		    <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/tailwind.purged.min.css"/>
 			<link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/style.css"/>
 
 			<meta charset="utf-8" />
@@ -12,7 +12,7 @@
 	<body>
 		<div class="flex flex-col h-screen">
 			{% include '_includes/navbar.html' %}
-			<main class="dark:bg-sky-950 dark:text-white p-4 flex-grow">
+			<main class="bg-sky-950 text-white p-4 flex-grow">
 				{% block content  %}
 
 				{% endblock %}
