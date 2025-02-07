@@ -14,7 +14,7 @@
   "devDependencies": {},
   "main": "postcss.config.js",
   "scripts": {
-  	"build": "postcss static/css/tailwind.css -o static/css/tailwind.purged.min.css"
+  	"build": "postcss css/tailwind.css -o static/css/tailwind.purged.min.css"
    },
 
   "repository": {
