@@ -1,7 +1,30 @@
 {% extends 'base.html' %}
+
+{% block title %}
+Home - {{ super() }}
+{% endblock %}
+
 {% block content %}
-<h1>Test</h1>
+    <h1 class="font-semibold text-4xl tracking-tight text-amber-600 p-4 text-center">
+        <span class="block">
+            {{ SITENAME }}
+        </span>
+    </h1>
 
-<p>Theme test basic page</p>
+    <h2>Recent Articles</h2>
 
+    {% if articles %}
+        <div id="articles" class="flex flex-col">
+        {% for article in articles %}
+            {% if loop.index0 < 5 %}
+            <!-- TODO: Hardcoded to 5 articles max on homepage, should set to variable. -->
+                <article class="flex flex-row p-4">
+                    <span class="inline-block px-0.5">{{ article.title }} - </span>
+                    <span class="inline-block italic">{{ article.date|strftime('%a %d %b %Y') }}</span>
+                    <!-- TODO: Date format doesn't obey locale. -->
+                </article>
+            {% endif %}
+        {% endfor %}
+        </div>
+    {% endif %}
 {% endblock %}
