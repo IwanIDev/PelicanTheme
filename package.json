@@ -3,20 +3,21 @@
     "@tailwindcss/postcss": "^4.0.4",
     "autoprefixer": "^10.4.20",
     "cssnano": "^7.0.6",
-    "postcss": "^8.5.1",
-    "postcss-cli": "^11.0.0",
     "purgecss": "^7.0.2",
     "tailwindcss": "^4.0.4"
   },
   "name": "pelicantheme",
   "version": "1.0.0",
   "description": "Personal Pelican Theme",
-  "devDependencies": {},
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^7.0.2",
+    "postcss": "^8.5.1",
+    "postcss-cli": "^11.0.0"
+  },
   "main": "postcss.config.js",
   "scripts": {
-  	"build": "postcss css/tailwind.css -o static/css/tailwind.purged.min.css"
-   },
-
+    "build": "postcss css/tailwind.css -o static/css/tailwind.purged.min.css"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/IwanIDev/PelicanTheme.git"
