@@ -18,9 +18,9 @@ Home - {{ super() }}
         {% for article in articles %}
             {% if loop.index0 < 5 %}
             <!-- TODO: Hardcoded to 5 articles max on homepage, should set to variable. -->
-                <article class="flex flex-row p-4">
-                    <span class="inline-block px-0.5">{{ article.title }} - </span>
-                    <span class="inline-block italic">{{ article.date|strftime('%a %d %b %Y') }}</span>
+                <article class="flex flex-row py-4">
+                    <span class="inline-block">{{ article.title }} - </span>
+                    <span class="inline-block italic px-0.5">{{ article.date|strftime('%a %d %b %Y') }}</span>
                     <!-- TODO: Date format doesn't obey locale. -->
                 </article>
             {% endif %}
