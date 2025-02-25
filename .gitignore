@@ -173,3 +173,6 @@ cython_debug/
 node_modules/
 
 example-site/output/
+
+static/css/tailwind.css
+static/css/tailwind.purged.min.css
