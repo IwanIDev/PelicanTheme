@@ -1,6 +1,10 @@
+from datetime import datetime
+
 AUTHOR = 'Example Author'
 SITENAME = 'Example Site'
 SITEURL = ""
+
+NOW = datetime.now()
 
 PATH = "content"
 
