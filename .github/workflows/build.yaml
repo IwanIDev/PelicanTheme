@@ -40,7 +40,7 @@ jobs:
 
       - name: Generate Zip
         run: |
-          zip -r ${{ env.TAG_NAME }}>.zip . -x ".git/*" ".github/*"
+          zip -r ${{ env.TAG_NAME }}.zip . -x ".git/*" ".github/*"
       
       - name: Upload binaries to release
         uses: svenstaro/upload-release-action@v2
